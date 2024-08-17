@@ -11,7 +11,7 @@ const Welcome = () => {
 
   return (
     <div className="flex flex-col justify-center items-center max-w-[500px]">
-      <h2 className="text-5xl font-bold mb-4">Seja bem-vindo!</h2>
+      <h2 className="text-4xl font-bold mb-4">Seja bem-vinda, <span className='text-purple-500'>Stella</span>!</h2>
       <p className="mb-4 text-[#8435de]">Clique no botão abaixo para começar:</p>
       <button
         onClick={() => dispatch({ type: 'CHANGE_STATE' })}

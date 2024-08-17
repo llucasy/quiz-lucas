@@ -7,8 +7,6 @@ const Option = ({ option, selectOption, answer }: any) => {
   const correctCSS = '!bg-[#0bfc03] font-bold'
   const wrongCSS = 'bg-[#3c0e70] opacity-100'
 
-  console.log(option)
-
   return (
     <div
       onClick={() => selectOption()}

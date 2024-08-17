@@ -108,6 +108,96 @@ const data = [
     question: 'Qual é a capital do estado de Roraima?',
     options: ['Boa Vista', 'Macapá', 'Manaus', 'Belém'],
     answer: 'Boa Vista',
+  },
+  {
+    question: 'Qual é a população aproximada do Brasil em 2024?',
+    options: [
+      '150 milhões de habitantes',
+      '190 milhões de habitantes',
+      '215 milhões de habitantes',
+      '230 milhões de habitantes'
+    ],
+    answer: '215 milhões de habitantes',
+  },
+  {
+    question: 'Qual é o país mais populoso do mundo em 2024?',
+    options: [
+      'Estados Unidos',
+      'Índia',
+      'China',
+      'Indonésia'
+    ],
+    answer: 'Índia',
+  },
+  {
+    question: 'Qual é a população aproximada da cidade de São Paulo em 2024?',
+    options: [
+      '8 milhões de habitantes',
+      '12 milhões de habitantes',
+      '15 milhões de habitantes',
+      '18 milhões de habitantes'
+    ],
+    answer: '12 milhões de habitantes',
+  },
+  {
+    question: 'O Brasil é o Xº país mais extenso do mundo em termos de território. Qual é essa posição?',
+    options: [
+      '2º',
+      '3º',
+      '4º',
+      '5º'
+    ],
+    answer: '5º',
+  },
+  {
+    question: 'Qual é o maior estado do Brasil em termos de território?',
+    options: [
+      'Amazonas',
+      'Mato Grosso',
+      'Pará',
+      'Minas Gerais'
+    ],
+    answer: 'Amazonas',
+  },
+  {
+    question: 'Qual é o maior país do mundo em termos de território?',
+    options: [
+      'Estados Unidos',
+      'China',
+      'Rússia',
+      'Canadá'
+    ],
+    answer: 'Rússia',
+  },
+  {
+    question: 'Qual é a cidade mais populosa do Brasil?',
+    options: [
+      'Rio de Janeiro',
+      'Brasília',
+      'São Paulo',
+      'Salvador'
+    ],
+    answer: 'São Paulo',
+  },
+  {
+    question: 'Em qual continente está localizado o Deserto do Saara?',
+    options: [
+      'Ásia',
+      'América do Sul',
+      'África',
+      'Oceania'
+    ],
+    answer: 'África',
+  },
+  {
+    question: 'A Alemanha fica em qual continente?',
+    options: [
+      'América do Norte',
+      'Ásia',
+      'Europa',
+      'África'
+    ],
+    answer: 'Europa',
   }
 ]
 

@@ -5,9 +5,23 @@ import questions from '@/data/questions'
 
 const STAGES = ['Start', 'Playing', 'End']
 
+const shuffleArray = (array: any[]) => {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+};
+
 const initialState = {
   gameStage: STAGES[0],
-  questions,
+  questions: questions.map((question) => {
+    // embaralhar as opções
+    return {
+      ...question,
+      options: shuffleArray(question.options),
+    }
+  }),
   currentQuestion: 0,
   score: 0,
   answerSelected: false,
