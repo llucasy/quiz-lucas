@@ -1,25 +1,39 @@
 'use client'
 
-import { QuizContext } from '@/contexts/Quiz'
-import { useContext, useEffect } from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
 
-import GameOver from '@/components/GameOver'
-import Question from '@/components/Question'
-import Welcome from '@/components/Welcome'
+import quizImg from '@/img/quiz.svg'
 
 export default function Home() {
-  const [quizState, dispatch] = useContext<any>(QuizContext)
-
-  useEffect(() => {
-    dispatch({ type: 'REORDER_QUESTIONS' })
-  }, [dispatch])
-
   return (
     <main className="flex flex-col items-center justify-center text-center pt-12">
       <h1 className="text-3xl font-bold underline mb-8">Quiz Lucas</h1>
-      {quizState.gameStage === 'Start' && <Welcome />}
-      {quizState.gameStage === 'Playing' && <Question />}
-      {quizState.gameStage === 'End' && <GameOver />}
+      <div className="flex flex-col justify-center items-center max-w-[500px]">
+        <h2 className="text-4xl font-bold mb-4">
+          Perguntas e Respostas
+        </h2>
+        <p className="mb-4 text-[#8435de]">Escolha um nome abaixo para começar:</p>
+        <div className="flex gap-6">
+          <Link href="/stella">
+            <button
+              type="button"
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            >
+              Stella
+            </button>
+          </Link>
+          <Link href="/stefany">
+            <button
+              type="button"
+              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            >
+              Stefany
+            </button>
+          </Link>
+        </div>
+        <Image className="mt-8" src={quizImg} alt="Inicio do Quiz" />
+      </div>
     </main>
   )
 }
