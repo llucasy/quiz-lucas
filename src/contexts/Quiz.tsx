@@ -1,8 +1,13 @@
 'use client'
 
 import { createContext, useReducer } from 'react'
-import questions from '@/data/questions'
+import dataQuestions from '@/data/questions'
 
+type ActionPayload = {
+  whoIam: 'Stella' | 'Stefany';
+};
+
+let questions: any = []
 const STAGES = ['Start', 'Playing', 'End']
 
 const shuffleArray = (array: any[]) => {
@@ -15,13 +20,6 @@ const shuffleArray = (array: any[]) => {
 
 const initialState = {
   gameStage: STAGES[0],
-  questions: questions.map((question) => {
-    // embaralhar as opções
-    return {
-      ...question,
-      options: shuffleArray(question.options),
-    }
-  }),
   currentQuestion: 0,
   score: 0,
   answerSelected: false,
@@ -30,9 +28,17 @@ const initialState = {
 const quizReducer = (state: any, action: any) => {
   switch (action.type) {
     case 'CHANGE_STATE':
+      questions = dataQuestions[action.payload.whoIam as ActionPayload['whoIam']]
       return {
         ...state,
         gameStage: STAGES[1],
+        questions: questions.map((question: any) => {
+          // embaralhar as opções
+          return {
+            ...question,
+            options: shuffleArray(question.options),
+          }
+        }),
       }
     case 'REORDER_QUESTIONS':
       return {
