@@ -166,6 +166,56 @@ const data = {
       options: ['América do Norte', 'Ásia', 'Europa', 'África'],
       answer: 'Europa',
     },
+    {
+      question: 'O que são números racionais?',
+      options: [
+        'Números que podem ser escritos como fração',
+        'Números inteiros',
+        'Números irracionais',
+        'Números primos',
+      ],
+      answer: 'Números que podem ser escritos como fração',
+    },
+    {
+      question: 'Como resolver uma equação do 1º grau com uma incógnita?',
+      options: [
+        'Subtraindo os números de ambos os lados',
+        'Somando os números de ambos os lados',
+        'Isolando a incógnita em um dos lados',
+        'Multiplicando a incógnita por 2',
+      ],
+      answer: 'Isolando a incógnita em um dos lados',
+    },
+    {
+      question: 'Explique como calcular a área de um triângulo.',
+      options: [
+        'Base multiplicada pela altura e depois dividida por 2',
+        'Base multiplicada pela altura',
+        'Soma de todos os lados dividida por 2',
+        'Altura multiplicada pelo comprimento',
+      ],
+      answer: 'Base multiplicada pela altura e depois dividida por 2',
+    },
+    {
+      question: 'O que é um sujeito oculto em uma frase?',
+      options: [
+        'Quando o sujeito está implícito na frase',
+        'Quando o sujeito está visível na frase',
+        'Quando o sujeito é uma pessoa',
+        'Quando o sujeito é indeterminado',
+      ],
+      answer: 'Quando o sujeito está implícito na frase',
+    },
+    {
+      question: 'Explique o uso da crase em frases.',
+      options: [
+        'A crase é usada antes de palavras masculinas',
+        "A crase é usada antes de palavras femininas que aceitam o artigo definido 'a'",
+        'A crase é usada antes de verbos',
+        'A crase é usada no início das frases',
+      ],
+      answer: "A crase é usada antes de palavras femininas que aceitam o artigo definido 'a'",
+    },
   ],
   Stefany: [
     {
@@ -197,14 +247,14 @@ const data = {
       answer: 'faixa verde',
     },
     {
-      "question": "No cheque pré-voo do extintor de gás freon verifica-se:",
-      "options": [
-        "lacre e validade",
-        "manômetro, lacre e validade",
-        "porta corta-fogo fechada",
-        "lacre e manômetro faixa verde"
+      question: 'No cheque pré-voo do extintor de gás freon verifica-se:',
+      options: [
+        'lacre e validade',
+        'manômetro, lacre e validade',
+        'porta corta-fogo fechada',
+        'lacre e manômetro faixa verde',
       ],
-      "answer": "porta corta-fogo fechada"
+      answer: 'porta corta-fogo fechada',
     },
     {
       question:
