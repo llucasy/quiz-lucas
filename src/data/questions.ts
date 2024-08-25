@@ -216,6 +216,26 @@ const data = {
       ],
       answer: "A crase é usada antes de palavras femininas que aceitam o artigo definido 'a'",
     },
+    {
+      question: "Qual dos conjuntos abaixo representa números naturais?",
+      options: [
+        "{-1, 0, 1, 2, 3}",
+        "{1, 2, 3, 4, 5}",
+        "{0, 0.5, 1, 1.5, 2}",
+        "{-3, -2, -1, 0}"
+      ],
+      answer: "{1, 2, 3, 4, 5}"
+    },
+    {
+      question: "Em uma expressão numérica, o que se resolve primeiro?",
+      options: [
+        "Parênteses",
+        "Multiplicação e Divisão",
+        "Adição e Subtração",
+        "Potenciação e Radiciação"
+      ],
+      answer: "Parênteses"
+    },
   ],
   Stefany: [
     {
