@@ -323,12 +323,12 @@ const data = {
       question:
         'São considerados líquidos voláteis e devem ser retirados do pax quando encontrados:',
       options: [
-        'álcool – benzina – éter – acetona',
-        'acetona – éter – benzina – óleo',
-        'acetona – éter – benzina – linhaça',
-        'álcool – óleo – éter',
+        'álcool - benzina - éter - acetona',
+        'acetona - éter - benzina - óleo',
+        'acetona - éter - benzina - linhaça',
+        'álcool - óleo - éter',
       ],
-      answer: 'álcool – benzina – éter – acetona',
+      answer: 'álcool - benzina - éter - acetona',
     },
     {
       question: 'Na cabine de passageiros, o extintor de gás freon localiza-se:',
@@ -390,12 +390,12 @@ const data = {
     {
       question: 'A propagação do calor pode ocorrer por:',
       options: [
-        'condução – convecção – irradiação',
-        'condução – explosão – energia eletrostática',
-        'reação em cadeia – combustão – explosão',
-        'energia eletrostática – combustão – irradiação',
+        'condução - convecção - irradiação',
+        'condução - explosão - energia eletrostática',
+        'reação em cadeia - combustão - explosão',
+        'energia eletrostática - combustão - irradiação',
       ],
-      answer: 'condução – convecção – irradiação',
+      answer: 'condução - convecção - irradiação',
     },
     {
       question:
@@ -403,6 +403,93 @@ const data = {
       options: ['Abafamento', 'Resfriamento', 'Isolamento', 'Sufocamento'],
       answer: 'Isolamento',
     },
+    {
+      question:
+        'O tipo de material combustível que, em locais fechados, emana gases tóxicos e explosões, é o do tipo:',
+      options: ['A', 'D', 'C', 'B'],
+      answer: 'D',
+    },
+    {
+      question:
+        'Ao combater o fogo deve direcionar o extintor para:',
+      options: ['cima da chama', 'base da chama', 'em torno da chama', 'independentemente'],
+      answer: 'base da chama',
+    },
+    {
+      "question": "O extintor pó químico, utilizado em ambientes fechados, pode causar:",
+      "options": ["Queimadura", "Enjoo", "irritação da pele", "dificuldade de respirar"],
+      "answer": "dificuldade de respirar"
+    },
+    {
+      "question": "Os combustíveis que compõem o fogo, podem ser:",
+      "options": ["sólidos, líquidos e gasosos", "sólidos, líquidos e elétricos", "líquidos, eruptíveis e magnéticos", "magnéticos, minerais e imantados"],
+      "answer": "sólidos, líquidos e gasosos"
+    },
+    {
+      "question": "Os elementos indispensáveis para a eclosão do fogo são:",
+      "options": ["calor, combustível, oxigênio e reação em cadeia", "calor, comburente, oxigênio e reação em cadeia", "calor, combustível, nitrogênio e reação em cadeia", "oxigênio, nitrogênio, reação em cadeia e calor"],
+      "answer": "calor, combustível, oxigênio e reação em cadeia"
+    },
+    {
+      "question": "O tipo de extintor que pode ser usado na Classe C, mesmo se sabendo que possui um agente extintor corrosivo e aderente após um determinado tempo é o:",
+      "options": ["CO2", "Água", "halon", "pó químico"],
+      "answer": "pó químico"
+    },
+    {
+      "question": "Combatendo-se um incêndio, utilizando o sufocamento do combustível, por exemplo, o extintor de espuma, o método empregado é o de:",
+      "options": ["abafamento", "isolamento", "sufocamento", "resfriamento"],
+      "answer": "sufocamento"
+    },
+    {
+      "question": "Em um incêndio, a extinção do fogo por abafamento é o método aplicado para se retirar o(a):",
+      "options": ["Calor", "Energia", "Comburente", "Combustível"],
+      "answer": "Comburente"
+    },
+    {
+      "question": "O método de extinção de fogo, mais utilizado, e que consiste em se retirar calor do material em combustão, é o método de:",
+      "options": ["Abafamento", "Isolamento", "Resfriamento", "quebra da reação em cadeia"],
+      "answer": "Resfriamento"
+    },
+    {
+      "question": "Em caso de incêndio a bordo, havendo fumaça densa na cabine, a melhor maneira de se deslocar rumo à saída de emergência será:",
+      "options": ["andando agachado, protegendo os olhos e o nariz", "andando normalmente, pois nas partes mais altas existe mais oxigênio", "arrastando-se pelo chão, pois junto a este permanece uma camada de ar menos contaminada", "arrastando-se pelo chão, porém mantendo a cabeça erguida, pois junto ao mesmo existe mais fumaça"],
+      "answer": "arrastando-se pelo chão, pois junto a este permanece uma camada de ar menos contaminada"
+    },
+    {
+      "question": "Após usar um extintor de Halon ou de pó químico, para apagar fogo em poltrona, cortina, revestimento ou papel, deverá ser adotado o procedimento de:",
+      "options": ["isolar a área afetada e avisar o comandante", "rescaldar os resíduos, para que não haja reinignição do fogo", "acionar a manutenção para que seja feita a manutenção necessária", "solicitar ao comandante que avalie a necessidade de uso de outro tipo de extintor"],
+      "answer": "rescaldar os resíduos, para que não haja reinignição do fogo"
+    },
+    {
+      "question": "Ao ser percebido o cheiro de queimado e/ou fumaça saindo de um forno, a ação imediata do comissário deverá ser:",
+      "options": ["vestir a máscara full-face, ajustando-a bem", "abrir a porta do forno e jogar qualquer líquido no seu interior", "fechar a porta do forno e desconectar os disjuntores correspondentes", "comunicar ao chefe de equipe, pois somente ele poderá avaliar a situação"],
+      "answer": "fechar a porta do forno e desconectar os disjuntores correspondentes"
+    },
+    {
+      "question": "Ao identificar um foco de incêndio a bordo, o comissário deverá, prioritariamente:",
+      "options": ["extinguir o fogo", "retirar os passageiros próximos ao local", "trancar o compartimento afetado pelo fogo", "comunicar ao comandante, pessoalmente, o fato"],
+      "answer": "extinguir o fogo"
+    },
+    {
+      "question": "O extintor de água deverá ser utilizado para combater incêndio causado por:",
+      "options": ["óleo diesel", "madeira, estofamento, papel e tecido", "gasolina ou querosene", "curto-circuito elétrico"],
+      "answer": "madeira, estofamento, papel e tecido"
+    },
+    {
+      "question": "Os incêndios em reservatórios de querosene, aparelhos de um centro de computação em funcionamento e transformadores de energia fora de uso, possuem, respectivamente, a seguinte classificação:",
+      "options": ["B, C, A", "B, C, C", "A, B, C", "B, A, C"],
+      "answer": "B, C, C"
+    },
+    {
+      "question": "De frente para uma fogueira, o calor chega até o sobrevivente por:",
+      "options": ["Condução", "Convecção", "Advecção", "Irradiação"],
+      "answer": "Irradiação"
+    },
+    {
+      "question": "O agente extintor do tipo BCF é conhecido na aeronave no sistema:",
+      "options": ["fixo externo", "portátil externo", "fixo interno", "portátil interno"],
+      "answer": "portátil interno"
+    },    
   ],
 }
 
