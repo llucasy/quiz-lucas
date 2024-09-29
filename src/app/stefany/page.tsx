@@ -11,7 +11,12 @@ export default function Home() {
   const [quizState, dispatch] = useContext<any>(QuizContext)
 
   useEffect(() => {
-    dispatch({ type: 'REORDER_QUESTIONS' })
+    ;(async () => {
+      const response = await fetch('api/stefany')
+      const data = await response.json()
+      dispatch({ type: 'SET_QUESTIONS', payload: { questions: data } })
+      dispatch({ type: 'REORDER_QUESTIONS' })
+    })()
   }, [dispatch])
 
   return (

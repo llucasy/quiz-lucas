@@ -14,7 +14,7 @@ const Welcome = ({name}: { name: string }) => {
       <h2 className="text-4xl font-bold mb-4">Seja bem-vinda, <span className='text-purple-500'>{name}</span>!</h2>
       <p className="mb-4 text-[#8435de]">Clique no botão abaixo para começar:</p>
       <button
-        onClick={() => dispatch({ type: 'CHANGE_STATE', payload: { whoIam: name} })}
+        onClick={() => dispatch({ type: 'CHANGE_STATE' })}
         type="button"
         className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
       >

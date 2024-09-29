@@ -1,10 +1,9 @@
 'use client'
 
 import { createContext, useReducer } from 'react'
-import dataQuestions from '@/data/questions'
 
 type ActionPayload = {
-  whoIam: 'Stella' | 'Stefany';
+  whoIam: 'stella' | 'stefany';
 };
 
 let questions: any = []
@@ -27,8 +26,10 @@ const initialState = {
 
 const quizReducer = (state: any, action: any) => {
   switch (action.type) {
+    case 'SET_QUESTIONS':
+      questions = action.payload.questions
+      return { ...state }
     case 'CHANGE_STATE':
-      questions = dataQuestions[action.payload.whoIam as ActionPayload['whoIam']]
       return {
         ...state,
         gameStage: STAGES[1],
@@ -58,7 +59,7 @@ const quizReducer = (state: any, action: any) => {
       return initialState
     case 'CHECK_ANSWER':
       if (state.answerSelected) return state
-      const option = action.payload.option
+      const option = action.payload.option.text
       return {
         ...state,
         score: action.payload.answer === option ? state.score + 1 : state.score,

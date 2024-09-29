@@ -23,8 +23,8 @@ const Question = () => {
         <p className="mb-4">
           {currentQuestion.options.map((option: any) => (
             <Option
-              key={option}
-              option={option}
+              key={option.id}
+              option={option.text}
               answer={currentQuestion.answer}
               selectOption={() => onSelectOption(option)}
             />
