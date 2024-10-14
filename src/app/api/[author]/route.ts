@@ -24,5 +24,7 @@ export async function GET( req: Request, { params }: { params: { author: 'stella
   } catch (error) {
     console.error(error)
     return NextResponse.json({ error: 'Ocorreu um erro' }, { status: 500 })
+  } finally {
+    await prisma.$disconnect()
   }
 }
