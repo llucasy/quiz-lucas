@@ -27,23 +27,23 @@ const Welcome = ({ name }: { name: string }) => {
       <p className="mb-4 text-[#8435de]">Clique no botão abaixo para começar:</p>
       <div className="flex gap-6">
         {subjects.map((subject) => (
-          <button
+          subject.subject && (<button
             key={subject.subject}
-            onClick={() => dispatch({ type: 'CHANGE_STATE' })}
+            onClick={() => dispatch({ type: 'CHANGE_STATE', payload: subject.subject })}
             type="button"
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mb-5 rounded"
           >
             {subject.subject}
-          </button>
+          </button>)
         ))}
       </div>
-      {/* <button
+      <button
         onClick={() => dispatch({ type: 'CHANGE_STATE' })}
         type="button"
-        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-1"
       >
         Iniciar
-      </button> */}
+      </button>
       <Image className="mt-8" src={quizImg} alt="Inicio do Quiz" />
     </div>
   )
